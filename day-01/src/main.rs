@@ -43,7 +43,7 @@ fn main() -> io::Result<()> {
         result += (arr1[i] - arr2[i]).abs()
     }
 
-    println!("Result part 1 {:?}", result); // 1938424
+    println!("Result part 1 {:?}", result);
 
     let mut similarity_score = 0;
     let mut p1 = 0;
@@ -78,7 +78,7 @@ fn main() -> io::Result<()> {
         similarity_score += number * table.get(&number).unwrap_or(&0);
     }
 
-    println!("Result part 2 {:?}", similarity_score); // 22014209
+    println!("Result part 2 {:?}", similarity_score);
 
     Ok(())
 }
